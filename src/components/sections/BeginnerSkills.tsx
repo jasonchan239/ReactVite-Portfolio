@@ -12,9 +12,7 @@ import {
 import {
     SiTypescript,
     SiJavascript,
-
     SiMongodb,
-
     SiApachehive
 } from 'react-icons/si';
 import {TbSql} from "react-icons/tb";
