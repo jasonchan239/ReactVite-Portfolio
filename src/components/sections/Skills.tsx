@@ -8,7 +8,6 @@ import {
     FaJira,
     FaJava,
     FaBitbucket
-
 } from 'react-icons/fa';
 import {FaMagnifyingGlass} from "react-icons/fa6";
 import {
