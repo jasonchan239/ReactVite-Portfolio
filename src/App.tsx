@@ -7,8 +7,11 @@ import { theme } from './styles/theme';
 import styled from '@emotion/styled';
 
 // Lazy load non-critical components
+const Experience = lazy(() => import('./components/sections/Experience'));
 const Projects = lazy(() => import('./components/sections/Projects'));
 const Skills = lazy(() => import('./components/sections/Skills'));
+const Learn = lazy(() => import('./components/sections/BeginnerSkills'));
+const Education = lazy(() => import('./components/sections/Education.tsx'));
 const Contact = lazy(() => import('./components/sections/Contact'));
 
 // Loading fallback component
@@ -34,16 +37,26 @@ function App() {
       <Layout>
         {/* Hero section is critical for LCP, so keep it eager loaded */}
         <Hero />
-        
+
         {/* Wrap non-critical sections in Suspense */}
+        <Suspense fallback={<LoadingFallback>Loading experience...</LoadingFallback>}>
+          <Experience />
         <Suspense fallback={<LoadingFallback>Loading projects...</LoadingFallback>}>
           <Projects />
         </Suspense>
         <Suspense fallback={<LoadingFallback>Loading skills...</LoadingFallback>}>
           <Skills />
         </Suspense>
+        <Suspense fallback={<LoadingFallback>Loading beginner skills...</LoadingFallback>}>
+          <Learn />
+        </Suspense>
+        <Suspense fallback={<LoadingFallback>Loading education...</LoadingFallback>}>
+          <Education />
+        </Suspense>
         <Suspense fallback={<LoadingFallback>Loading contact...</LoadingFallback>}>
           <Contact />
+        </Suspense>
+
         </Suspense>
       </Layout>
     </ThemeProvider>
