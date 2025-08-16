@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { motion } from 'framer-motion';
 import { theme } from '../../styles/theme';
-
+import imgUrl from '../../assets/scotia.png';
 const ProjectsSection = styled.section`
   min-height: 100vh;
   display: flex;
@@ -159,7 +159,7 @@ const experiences = [
     id: 1,
     title: "Software Engineer Intern - Scotiabank - 2022/09-2023/08",
     description: "Wrote tests for REST APIs for multiple services. Assisted in writing automation tests. Converted user stories into test cases. Updated old test cases to new testing standards. Wrote documentation on every service about new changes to testing standards. Used Postman and Intellij to test REST API endpoints. Attended daily team scrum meetings to discuss progress and issues",
-    image: "src/assets/scotia.png",
+    image: imgUrl,
     techStack: ["Java", "Python", "QA Testing", "Automation Testing"],
   },
 ];

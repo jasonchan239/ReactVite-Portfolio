@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { motion } from 'framer-motion';
 import { theme } from '../../styles/theme';
-
+import imgUrl from '../../assets/western.png'
 const EducationSection = styled.section`
   min-height: 100vh;
   display: flex;
@@ -159,7 +159,7 @@ const educations = [
     id: 1,
     title: "University Of Western Ontario - Bachelors of Science - Computer Science - (2019-2024)",
     description: "Studied at the University of Western Ontario 4-year program in Computer Science with a 12-month internship as a software engineer intern.",
-    image: "src/assets/western.png",
+    image: imgUrl,
     techStack: ["12-month internship"],
   },
 ];
