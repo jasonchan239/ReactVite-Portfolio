@@ -130,7 +130,7 @@ export const Hero = () => {
               Hi, I'm Jason Chan
             </Title>
             <Subtitle role="heading" aria-level={3}>
-              New Grad - Spring 2024
+              New Grad - 2019 - Spring 2024
             </Subtitle>
             <Description role="paragraph">
               I am a recent computer science graduate from the University of Western Ontario with a growing interest in writing  clean, robust, and reliable code.
@@ -178,3 +178,4 @@ export const Hero = () => {
     </HeroSection>
   );
 };
+
